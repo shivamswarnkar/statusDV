@@ -12,7 +12,7 @@ StatusDV is a flask powered webapp which allows users to create custom wordcloud
 ***1. [Custom_wordcloud_generator](custom_wordcloud_generator.ipynb)***  
 It is a jupyter notebook which contains examples of how webapp generates some of its custom wordclouds
 
-**2. facebook_api** 
+**2. [facebook_api](facebook_api)** 
 Retrieve user statues by giving user token 
 ```
 >>> from facebook_api.feed import Feed
@@ -25,7 +25,7 @@ Use get_user from facebook_api.utils to check user token's validity and get user
 >>> get_user(token="YOUR_USER_TOKEN") # returns name & id if valid, else None
 ```
 
-**3. twiiter_api**
+**3. [twitter_api](twitter_api)**
 Retrieve user tweets easily. It's a flask wrapper for tweepy. Your app.config should contain following twitter keys
 - TWITTER_CONSUMER_KEY
 - TWITTER_CONSUMER_SECRET,
@@ -41,11 +41,11 @@ Once you have your flask app ready, you can easily use it with twitter_api as fo
 # returns list of tweets
 ```
 
-**4. utils**
+**4. [utils](utils)**
 utils contains various functions to generate [dummy word-frequency dict](utils/status_utils.py#L6), [filter function](utils/status_utils.py#L27) to remove non-ascii chars from text and [file utils](utils/file_utils.py#L4) to check custom file constraints. Image utils contains functions to [merge two images](utils/img_utils.py#L17) and to check whether given image file is of a [supported type](utils/img_utils.py#L4).
 
 ### Structure
-[Repo Structure](static/structure.png)
+![Repo Structure](static/structure.png)
 
 ### Dependencies
 - python 3.6
