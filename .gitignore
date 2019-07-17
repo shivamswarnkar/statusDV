@@ -2,3 +2,6 @@
 *build_output/*
 *.pyc*
 *venv/*
+*.ipynb_checkpoints
+*.
+*..
