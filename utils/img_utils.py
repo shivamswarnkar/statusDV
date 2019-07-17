@@ -10,8 +10,8 @@ def is_img(file):
 			True or False whether file exists and has extention 
 			equal to supported image file extentions
 	"""
-    return os.path.isfile(file) and \
-           os.path.splitext(file)[1] in ['.jpg','.png', '.jpeg']
+	return os.path.isfile(file) and \
+	os.path.splitext(file)[1] in ['.jpg','.png', '.jpeg']
 
 
 def sum_imgs(overlay, background, output_filename):
@@ -27,14 +27,14 @@ def sum_imgs(overlay, background, output_filename):
 			returns None
 	"""
 	# resize overlay to fit on background
-    overlay.thumbnail(background.size)
+	overlay.thumbnail(background.size)
 
-    # create new Image of size background.size
-    transparent = Image.new('RGBA', background.size, (1, 1, 1, 1))
+	# create new Image of size background.size
+	transparent = Image.new('RGBA', background.size, (1, 1, 1, 1))
 
-    # paste both images in order
-    transparent.paste(background, (0, 0))
-    transparent.paste(overlay, (0, 0), mask=overlay)
+	# paste both images in order
+	transparent.paste(background, (0, 0))
+	transparent.paste(overlay, (0, 0), mask=overlay)
 
-    # save resulting image
-    transparent.save(output_filename)
+	# save resulting image
+	transparent.save(output_filename)

@@ -12,5 +12,5 @@ def is_file(file, extn):
 			True or False whether file exists and has extention 
 			equal to extn
 	"""
-    return os.path.isfile(file) and \
-           os.path.splitext(file)[1].lower() == extn.lower()
+	return os.path.isfile(file) and \
+	os.path.splitext(file)[1].lower() == extn.lower()
