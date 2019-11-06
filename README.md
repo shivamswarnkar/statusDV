@@ -1,10 +1,16 @@
 # StatusDV 
 StatusDV is a flask powered webapp which allows users to create custom wordcloud from anyone's twitter timeline, raw text inputs or facebook statuses (not allowed after facebook policy changes but user can use dummy status generator instead). 
 [Try Here!!](https://statusdv.herokuapp.com/)
+
+### About
+ This repo contains different custom packages which were used in the webapp. You can use these packages independently from this project to retrieve anyone's tweets or to load facebook statuses. This repo also contains some utils functions (each file is well-documented)
+ 
+Because of security reasons and privacy policies, source code for webapp cannot be made public. 
+ 
 ### Examples: Made From Tweets
-![Home Page](demo_imgs/nyu_tandon.png)
-![Home Page](demo_imgs/politics.png)
-![Home Page](demo_imgs/delhi.png)
+![Home Page](demo_imgs/simple.jpg)
+![Home Page](demo_imgs/mask.jpg)
+![Home Page](demo_imgs/print.jpg)
 
 ### Website
 ![Home Page](demo_imgs/website/home.png)
@@ -16,12 +22,8 @@ StatusDV is a flask powered webapp which allows users to create custom wordcloud
 ![Home Page](demo_imgs/website/output.png)
 
 
-### About
- This repo contains different custom packages which were used in the webapp. You can use these packages independently from this project to retrieve anyone's tweets or to load facebook statuses. This repo also contains some utils functions (each file is well-documented)
- 
- Because of security reasons and privacy policies, source code for webapp cannot be made public. 
- 
- ### How to Use
+
+### How to Use
 
 ***1. [Custom_wordcloud_generator](custom_wordcloud_generator.ipynb)***  
 It is a jupyter notebook which contains examples of how webapp generates some of its custom wordclouds
