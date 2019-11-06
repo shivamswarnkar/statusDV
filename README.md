@@ -1,6 +1,20 @@
 # StatusDV 
 StatusDV is a flask powered webapp which allows users to create custom wordcloud from anyone's twitter timeline, raw text inputs or facebook statuses (not allowed after facebook policy changes but user can use dummy status generator instead). 
 [Try Here!!](https://statusdv.herokuapp.com/)
+### Examples: Made From Tweets
+![Home Page](demo_imgs/nyu_tandon.png)
+![Home Page](demo_imgs/politics.png)
+![Home Page](demo_imgs/delhi.png)
+
+### Website
+![Home Page](demo_imgs/website/home.png)
+![Text Page](demo_imgs/website/text_source.png)
+![Home Page](demo_imgs/website/styles1.png)
+![Home Page](demo_imgs/website/color_pattern.png)
+![Home Page](demo_imgs/website/background.png)
+![Home Page](demo_imgs/website/preferences.png)
+![Home Page](demo_imgs/website/output.png)
+
 
 ### About
  This repo contains different custom packages which were used in the webapp. You can use these packages independently from this project to retrieve anyone's tweets or to load facebook statuses. This repo also contains some utils functions (each file is well-documented)
